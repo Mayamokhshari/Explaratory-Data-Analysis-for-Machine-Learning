@@ -6,9 +6,7 @@
 
 - This project performs Exploratory Data Analysis (EDA) on the Titanic dataset and builds a Logistic Regression model to predict passenger survival. The goal is to understand the data, handle missing values appropriately, engineer useful features, and train a baseline classification model.
 
-2. Dataset
-
-- Dataset: Titanic Dataset
+2. Dataset: Titanic Dataset
     - Source: Kaggle
     - Target Variable: Survived
     - 0 → Did not survive
@@ -16,33 +14,23 @@
 
 3. Exploratory Data Analysis (EDA)
 
-During EDA, the following insights were observed:
+- During EDA, the following insights were observed:
+    - The dataset contains missing values, mainly in:
+        - Age
+        - Cabin
 
-The dataset contains missing values, mainly in:
+- Survival rates differ across:
+    - Passenger class (Pclass)
+    - Gender (Sex)
+- Some features show class imbalance (e.g. SibSp)
 
-Age
+- Continuous variables such as Age and Fare are right-skewed
 
-Cabin
-
-Survival rates differ across:
-
-Passenger class (Pclass)
-
-Gender (Sex)
-
-Some features show class imbalance (e.g. SibSp)
-
-Continuous variables such as Age and Fare are right-skewed
-
-Visualizations used:
-
-Count plots
-
-Histograms
-
-Heatmaps
-
-Boxplots
+- Visualizations used:
+    - Count plots
+    - Histograms
+    - Heatmaps
+    - Boxplots
 
 4. Data Cleaning & Preprocessing
 
