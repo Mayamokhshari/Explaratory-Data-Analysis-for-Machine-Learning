@@ -4,7 +4,7 @@
 ## Titanic Survival Prediction using Logistic Regression
 1. Project Overview
 
-This project performs Exploratory Data Analysis (EDA) on the Titanic dataset and builds a Logistic Regression model to predict passenger survival. The goal is to understand the data, handle missing values appropriately, engineer useful features, and train a baseline classification model.
+- This project performs Exploratory Data Analysis (EDA) on the Titanic dataset and builds a Logistic Regression model to predict passenger survival. The goal is to understand the data, handle missing values appropriately, engineer useful features, and train a baseline classification model.
 
 2. Dataset
 
