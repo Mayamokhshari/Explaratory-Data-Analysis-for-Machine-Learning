@@ -9,14 +9,10 @@
 2. Dataset
 
 - Dataset: Titanic Dataset
-
- - Source: Kaggle
-
- - Target Variable: Survived
-
-0 → Did not survive
-
-1 → Survived
+    - Source: Kaggle
+    - Target Variable: Survived
+    - 0 → Did not survive
+    - 1 → Survived
 
 3. Exploratory Data Analysis (EDA)
 
