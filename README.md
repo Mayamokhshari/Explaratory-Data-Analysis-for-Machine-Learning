@@ -34,63 +34,53 @@
 
 4. Data Cleaning & Preprocessing
 
-Key preprocessing steps include:
+- Key preprocessing steps include:
 
-Missing Values
+    - Missing Values
 
-Age: Imputed using the average age within each passenger class (Pclass)
+        - Age: Imputed using the average age within each passenger class (Pclass)
+        - Cabin: Dropped due to a large number of missing values
 
-Cabin: Dropped due to a large number of missing values
-
-Embarked: Converted into dummy variables
+    - Embarked and Sex: Converted into dummy variables
 
 5. Feature Encoding
 
-Categorical variables converted using pd.get_dummies()
+- Categorical variables converted using pd.get_dummies()
 
-drop_first=True used to avoid multicollinearity
+- drop_first=True used to avoid multicollinearity
 
-Feature Selection
+6. Feature Selection
 
-Dropped non-informative columns such as:
+- Dropped non-informative columns such as:
+    - Name
+    - Ticket
 
-Name
+7. Model Building
 
-Ticket
+- Model: Logistic Regression
+- Why Logistic Regression?
 
-6. Model Building
+    - Suitable for binary classification problems
+    - Simple and interpretable baseline model
 
-Model: Logistic Regression
+- Train-Test Split
 
-Why Logistic Regression?
+    - Features (X) separated from target (y)
+    - Data split into training and test sets
 
-Suitable for binary classification problems
+- To address convergence warnings:
 
-Simple and interpretable baseline model
-
-Train-Test Split
-
-Features (X) separated from target (y)
-
-Data split into training and test sets
-
-To address convergence warnings:
-
-Increased the number of iterations (max_iter)
-
-(Optional) Feature scaling can further improve convergence
+    - Increased the number of iterations (max_iter)
+    - (Optional) Feature scaling can further improve convergence
 
 7. Model Evaluation
 
-The trained model is evaluated using:
+- The trained model is evaluated using:
+    - Accuracy score
+    - Confusion matrix
+    - Classification report
 
-Accuracy score
-
-Confusion matrix
-
-Classification report
-
-This provides insight into how well the model predicts survival outcomes.
+- This provides insight into how well the model predicts survival outcomes.
 
 - Project Structure
 - Titanic-Logistic-Regression
@@ -100,25 +90,24 @@ This provides insight into how well the model predicts survival outcomes.
 
 ### How to Run
 
-Clone the repository
+- Clone the repository
 
-Install required libraries:
+- Install required libraries:
 
-pip install pandas numpy matplotlib seaborn scikit-learn
+- pip install pandas numpy matplotlib seaborn scikit-learn
 
+- Open the notebook:
 
-Open the notebook:
-
-jupyter notebook Titanic_EDA_LogisticRegression.ipynb
+    - jupyter notebook Titanic_EDA_LogisticRegression.ipynb
 
 - Notes
 
-This project focuses on clarity and correctness rather than advanced optimization
+    - This project focuses on clarity and correctness rather than advanced optimization
 
-It serves as a baseline ML project and can be extended with:
+    - It serves as a baseline ML project and can be extended with:
 
-Feature scaling
+        - Feature scaling
 
-Cross-validation
+        - Cross-validation
 
-More advanced models (Random Forest, XGBoost)
+- More advanced models (Random Forest, XGBoost)
