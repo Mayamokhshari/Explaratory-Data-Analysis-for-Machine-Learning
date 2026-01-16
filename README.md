@@ -8,11 +8,11 @@
 
 2. Dataset
 
-Dataset: Titanic Dataset
+- Dataset: Titanic Dataset
 
-Source: Kaggle
+ - Source: Kaggle
 
-Target Variable: Survived
+ - Target Variable: Survived
 
 0 → Did not survive
 
